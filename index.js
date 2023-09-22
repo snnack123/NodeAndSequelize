@@ -43,16 +43,17 @@ app.post('/login', async (req, res) => {
     }
 });
 
-app.get('/users/:userId', verifyToken, (req, res) => {
-    const { userId } = req.params;
-
-    res.status(200).json({ id: userId });
-})
-
 app.post('/products', verifyToken, async (req, res) => {
-    await Product.create({ sku: '123', name: 'name', price: 123});
+    try {
+        if (!req.body.name || !req.body.sku || !req.body.price || !req.body.categoryId) {
+            return res.status(400).json({ error: 'Missing required fields' });
+        }
 
-    res.sendStatus(200);
+        const product = await db.Product.create(req.body);
+        res.status(201).json({ message: 'Product created successfully', product: product });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
 });
 
 app.post('/users', async (req, res) => {
