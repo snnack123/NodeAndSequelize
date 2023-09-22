@@ -7,7 +7,7 @@ Developed with Express 🚀🚀🚀
 - Node.js v18
 - MySQL Workbench
 - Docker
-- Visual Studio Code / other editor
+- Visual Studio Code / other code editor
 
 ## Usage
 
