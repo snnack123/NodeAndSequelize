@@ -15,17 +15,6 @@ Developed with Express 🚀🚀🚀
 - Run Development - `npm run dev`
 - Test lint - `npm run lint`
 
-## Packages
-- Nodemon
-- Express
-- Sequelize
-- JsonWebToken
-- Bcrypt
-- MySQL2
-- Dotenv
-- Cors
-- Eslint
-
 ## Installation steps
 
 ### Step 1
@@ -40,6 +29,18 @@ Developed with Express 🚀🚀🚀
 
 ### Step 4
   - Copy the repository on your local machine
-  - Create a `.env` file based on `.env.example` and add your credentials
+  - Create a `.env` file based on `.env.example` and add your credentials (the developer will see a console log with the message `Connection to the database has been established successfully.` if the credentials are correct)
   - Install packages with `npm run install`
-  - Start the project with `npm run dev`
+  - Start the project with `npm run dev` (the developer will see a console log with the message `App listening at http://localhost:PORT` if all is good)
+  - Open the browser and type `http://localhost:PORT` for testing
+
+## Packages
+- Nodemon
+- Express
+- Sequelize
+- JsonWebToken
+- Bcrypt
+- MySQL2
+- Dotenv
+- Cors
+- Eslint
