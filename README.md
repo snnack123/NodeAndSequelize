@@ -29,7 +29,8 @@ Developed with Express 🚀🚀🚀
 
 ### Step 4
   - Copy the repository on your local machine
-  - Create a `.env` file based on `.env.example` and add your credentials (the developer will see a console log with the message `Connection to the database has been established successfully.` if the credentials are correct)
+  - Create a `.env` file based on `.env.example` and add your credentials
+  - - (the developer will see a console log with the message `Connection to the database has been established successfully.` if the credentials are correct)
   - Install packages with `npm run install`
   - Start the project with `npm run dev` (the developer will see a console log with the message `App listening at http://localhost:PORT` if all is good)
   - Open the browser and type `http://localhost:PORT` for testing
