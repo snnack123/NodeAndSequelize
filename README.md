@@ -29,7 +29,7 @@ Developed with Express 🚀🚀🚀
 ## Installation steps
 
 ### Step 1
- Create a docker image with this command (you can edit your docker image name and MySQL password): 
+ Create a docker image with this command (you can edit your docker image name and MySQL password):  <br>
   `docker run --name DB_NAME -p 3306:3306 -e MYSQL_ROOT_PASSWORD=DB_PASS -d mysql`
 
 ### Step 2
