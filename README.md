@@ -28,11 +28,18 @@ Developed with Express 🚀🚀🚀
 
 ## Installation steps
 
-# Step 1
- Create a docker image with this command (you can edit your docker image name and MySQL password): `docker run --name DB_NAME -p 3306:3306 -e MYSQL_ROOT_PASSWORD=DB_PASS -d mysql`
+### Step 1
+ Create a docker image with this command (you can edit your docker image name and MySQL password): 
+  `docker run --name DB_NAME -p 3306:3306 -e MYSQL_ROOT_PASSWORD=DB_PASS -d mysql`
 
-# Step 2
+### Step 2
   Create a new local connection on your MySQL Workbench with port 3306 and the password is set one step back.
 
-# Step 3
+### Step 3
   Create a new database
+
+### Step 4
+  - Copy the repository on your local machine
+  - Create a `.env` file based on `.env.example` and add your credentials
+  - Install packages with `npm run install`
+  - Start the project with `npm run dev`
