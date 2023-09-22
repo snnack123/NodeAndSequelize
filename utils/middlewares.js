@@ -14,8 +14,8 @@ const verifyToken = (request, response, next) => {
     } else {
         response.sendStatus(401);
     }
-}
+};
 
 module.exports = {
     verifyToken
-}
+};

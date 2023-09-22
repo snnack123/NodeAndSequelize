@@ -12,7 +12,7 @@ router.post('/products', verifyToken, async (req, res) => {
         }
 
         const product = await Product.create(req.body);
-        res.status(201).json({ message: 'Product created successfully', product: product });
+        res.status(201).json({ message: 'Product created successfully', product });
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
