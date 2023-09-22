@@ -11,8 +11,6 @@ const saltRounds = process.env.BCRYPT_SALT ? Number(process.env.BCRYPT_SALT) : 1
 
 app.get("/", (req, res) => {
     res.send("I will be shown on the Browser");
-    // console.log('Request Type:', req.method)
-    // console.log("I will be shown on the Terminal");
 });
 
 app.post('/login', async (req, res) => {
