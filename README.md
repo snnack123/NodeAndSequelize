@@ -14,3 +14,14 @@ Developed with Express 🚀🚀🚀
 - Install - `npm run install`
 - Run Development - `npm run dev`
 - Test lint - `npm run lint`
+
+## Packages
+- Nodemon
+- Express
+- Sequelize
+- JsonWebToken
+- Bcrypt
+- MySQL2
+- Dotenv
+- Cors
+- Eslint
