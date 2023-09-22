@@ -24,6 +24,10 @@ module.exports = {
     rules: {
         indent: ['error', 4],
         semi: ['error', 'always'],
-        'no-unused-vars': ['error']
+        'no-unused-vars': ['error'],
+        'no-multi-spaces': 'error', // disallow multiple spaces
+        camelcase: 'error', // enforce camelcase naming convention
+        'no-empty': 'error', // disallow empty block statements,
+        eqeqeq: ['error', 'always'] // enforce the use of === and !==
     }
 };
