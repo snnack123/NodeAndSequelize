@@ -7,8 +7,10 @@ const cors = require('cors');
 dotenv.config();
 
 db.sequelize.authenticate()
-    .then(() => console.log('Connection to database has been established successfully.'))
-    .catch((error) => console.error('Unable to connect to the database:', error));
+    .then(() => {
+        console.log('Connection to database has been established successfully.');
+        return db.sequelize.sync();
+    }).catch((error) => console.error('Unable to connect to the database:', error));
 
 // Define the Express app
 const app = express();
