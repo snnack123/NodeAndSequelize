@@ -5,7 +5,9 @@ Developed with Express 🚀🚀🚀
 ## Prerequisites
 
 - Node.js v18
-- Yarn v1
+- MySQL Workbench
+- Docker
+- Visual Studio Code / other editor
 
 ## Usage
 
